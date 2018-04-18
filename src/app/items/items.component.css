@@ -1,0 +1,117 @@
+@import '../app.component.css';
+
+* {
+  font-size: 16px;
+}
+
+h2 {
+  font-family: OpenSans Light, sans-serif;
+  font-size: 36px;
+  color: #565A69;
+  margin-bottom: 25px;
+}
+
+.items-container {
+  margin-left: 15px;
+  min-height: 400px;
+  box-shadow: 1px 1px 5px #a9a9a9,
+  -1px -1px 5px #a9a9a9;
+}
+
+.inner-box {
+  padding: 20px 20px 0 30px;
+}
+
+.form-control {
+  border-color: #B3B3B3;
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+input::placeholder {
+  font-family: OpenSans, sans-serif;
+  font-size: 16px;
+  color: #B3B3B3;
+}
+
+button {
+  width: 100%;
+  background: #27ccc0;
+  font-family: 'OpenSans Light', sans-serif;
+  margin-bottom: 10px;
+  color: #fff;
+  transition: all .2s ease-in-out;
+}
+
+button:hover {
+  background: #3fc18b;
+  box-shadow: 2px 2px 4px rgba(128, 128, 128, 0.5);
+}
+
+.items {
+  width: 100%;
+  /*max-height: 400px;*/
+  /*overflow-y: auto;*/
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'OpenSans Semibold', sans-serif;
+  width: 100%;
+  margin: 0 30px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.34);
+  color: #2B2F3E;
+  position: relative;
+}
+
+.item p::first-letter {
+  text-transform: capitalize;
+}
+
+.item p {
+  margin: auto 0;
+}
+
+.btn-delete {
+  width: 100px;
+  height: 30px;
+  right: 0;
+  font-family: 'OpenSans Light', sans-serif;
+  color: #FF305A;
+  border: 1px solid #FF305A;
+  border-radius: 4px;
+  margin: 8px 0;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s linear;
+}
+
+.btn-delete:hover {
+  background: #FF305A;
+  color: #fff;
+}
+
+.comments-count {
+  font-family: 'OpenSans Bold', sans-serif;
+  border-radius: 10.5px;
+  background: #27ccc0;
+  font-size: 13px;
+  line-height: 18px;
+  color: #fff;
+  padding: 3px 10px;
+  margin-left: 5px;
+}
+
+.active:before {
+  content: '';
+  border-left: 5px solid #ff2f5a;
+  position: absolute;
+  left: -33px;
+  width: 3px;
+  height: 100%;
+}
+
+

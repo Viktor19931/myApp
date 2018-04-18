@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("../assets/fonts/OpenSans/OpenSans.eot"),
+    url("../assets/fonts/OpenSans/OpenSans.woff"),
+    url("../assets/fonts/OpenSans/OpenSans.ttf"),
+    url("../assets/fonts/OpenSans/OpenSans.svg")
+}
+
+@font-face {
+  font-family: "OpenSans Light";
+  src: url("../assets/fonts/OpenSans-Light/OpenSans-Light.eot"),
+  url("../assets/fonts/OpenSans-Light/OpenSans-Light.woff"),
+  url("../assets/fonts/OpenSans-Light/OpenSans-Light.ttf"),
+  url("../assets/fonts/OpenSans-Light/OpenSans-Light.svg")
+}
+
+@font-face {
+  font-family: "OpenSans-Semibold";
+  src: url("../assets/fonts/OpenSans-Semibold/OpenSans-Semibold.eot"),
+  url("../assets/fonts/OpenSans-Semibold/OpenSans-Semibold.woff"),
+  url("../assets/fonts/OpenSans-Semibold/OpenSans-Semibold.ttf"),
+  url("../assets/fonts/OpenSans-Semibold/OpenSans-Semibold.svg")
+}
+
+@font-face {
+  font-family: "OpenSans-Semibold";
+  src: url("../assets/fonts/OpenSans-Bold/OpenSans-Bold.eot"),
+  url("../assets/fonts/OpenSans-Bold/OpenSans-Bold.woff"),
+  url("../assets/fonts/OpenSans-Bold/OpenSans-Bold.ttf"),
+  url("../assets/fonts/OpenSans-Bold/OpenSans-Bold.svg")
+}
+
+.wrap {
+  background: #f9f9f9;
+}
+
+.content {
+  padding: 30px 0 30px 210px;
+  height: 100vh;
+}

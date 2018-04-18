@@ -1,0 +1,33 @@
+<div class="row items-container">
+  <div class="col-12 inner-box">
+    <h2>Items</h2>
+    <div class="row">
+      <div class="col-8">
+        <input
+          class="form-control"
+          type="text"
+          [(ngModel)]="item"
+          placeholder="Type name here...">
+      </div>
+      <div class="col-4 pl-0">
+        <button class="btn button"
+                (click)="addNewItem()">Add new
+        </button>
+      </div>
+      <div class="items">
+        <div class="row">
+          <a *ngFor="let item of items, let i = index"
+             class="item"
+             [class.active]="selectedIndex === i"
+             (click)="selectedItem(items.indexOf(item), i)">
+            <p>{{ item.name }}
+              <span class="comments-count">{{ item.comments.length }}</span>
+            </p>
+            <span class="btn-delete"
+                  (click)="deleteItem(i)">Delete</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

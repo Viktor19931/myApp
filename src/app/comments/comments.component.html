@@ -1,0 +1,36 @@
+<div *ngIf="comments" class="row comments-container">
+  <h1>Comments
+    <span>#{{comments.length}}</span>
+  </h1>
+  <div *ngIf="comments.length != 0" class="col-12 comments">
+    <div class="row">
+      <div class="comment"
+           *ngFor="let comment of comments, let i = index">
+        <div class="col-2">
+          <div class="ico"
+               [ngClass]="i % 2 == 0 ? 'yellow' : 'violet'">
+          </div>
+        </div>
+        <p class="col-10 text">{{ comment.comment }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="comments.length == 0" class="no-comment">
+    <h3 class="alert">Please add a comment !</h3>
+  </div>
+  <div *ngIf="selectedIndex != null" class="col-12 input-field">
+    <div class="row">
+      <div class="col-2">
+        <div class="ico greybg"></div>
+      </div>
+      <div class="col-10 pl-1">
+        <textarea (keyup)="postComment($event)"
+                  [(ngModel)]="post"></textarea>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="!comments" class="no-comment row comments-container">
+  <h3 class="alert">Please select ticket !</h3>
+</div>

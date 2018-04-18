@@ -1,0 +1,101 @@
+@import '../app.component.css';
+
+h1 {
+  font-family: 'OpenSans Light', sans-serif;
+  font-size: 36px;
+  color: #565A69;
+  margin: 20px 0 30px 20px;
+}
+
+.comments-container {
+  margin-left: 0;
+  box-shadow: 1px 1px 5px #a9a9a9,
+  -1px -1px 5px #a9a9a9;
+}
+
+.comments {
+  padding: 20px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.comment {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 0 22px 0;
+  border-bottom: 1px solid #f2f2f2;
+  width: 100%;
+}
+
+.comment:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.comment > div {
+  display: inline-block;
+  padding-left: 11px;
+}
+
+.photo {
+  height: 52px;
+}
+
+.violet {
+  background: #47568c;
+}
+
+.yellow {
+  background: #FF8A00;
+}
+
+.text {
+  font-family: OpenSans, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.input-box div {
+  background: #e6e6e6;
+  width: 52px;
+  height: 52px;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  height: 70px;
+  resize: none;
+  border: 2px solid #f2f2f2;
+  font-family: 'OpenSans Light', sans-serif;
+  font-size: 14px;
+  padding: 10px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.ico {
+  width: 52px;
+  height: 52px;
+}
+
+.greybg {
+  background: #e6e6e6;
+}
+
+.input-field {
+  margin-top: 22px;
+}
+
+.no-comment {
+  display: block;
+  margin: auto;
+}
+
+.alert {
+  font-family: 'OpenSans Light', sans-serif;
+  font-size: 20px;
+}
